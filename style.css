@@ -1,0 +1,240 @@
+/*   
+Theme Name: ContentLEAD Integration Theme
+Description: Style-free theme to pull style sheets from clients
+Author: ContentLEAD
+Author URI: http://contentlead.com
+Version: 1.0
+*/
+
+/* IMPORTS BASIC CONTENT LEAD STYLE SHEET */
+@import url("simple.css");   
+
+/* And here begins the Wordpress fun.
+-------------------------------------------------------------------------------*/
+
+#news {
+	width: 1000px;
+	margin: 30px auto;
+}
+
+.author {
+	display: none;
+}
+
+#primary,
+.single article {
+	width: 64.3%;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 15px;
+}
+
+#latest-news,
+.news-category {
+	margin-bottom: 30px;
+}
+
+#sidebar {
+	width: 32.6%;
+	float: right;
+}
+
+#news .hentry:last-child {
+	margin-bottom: 0;
+}
+
+#latest-news img,
+#primary img {
+	max-width: 100%;
+	height: auto;
+	float: left;
+	clear: left;
+	margin-right: 15px;
+}
+
+#latest-news article,
+.archive article,
+.category article {
+	display: block;
+	overflow:auto;
+	margin-bottom: 15px;
+}
+
+	#latest-news article .entry-header,
+	.news-category article .entry-header {
+		margin-bottom: 15px;
+	}
+
+#latest-news p,
+.news-category p,
+.archive p {
+	margin-bottom: 0;
+}
+
+#news .left-col, #news .right-col {
+	width: 47.5%;
+	float: left;
+}
+
+#news .right-col {
+	float:right;
+}
+
+.social-media,
+.widget,
+#contact-button,
+.page-title,
+.single .entry-header,
+.single .entry-header {
+	margin-bottom: 30px;
+}
+
+.figure { /* Styling macthes Facebook Comments Box */
+	float: right;
+	max-width: 50%;
+	padding: 8px;
+	margin: 0 0 15px 15px;
+	background-color: transparent;
+	background-color: rgba(190, 190, 190, .2);
+	border: 1px solid #E9E9E9;
+	text-align: center;
+}
+
+	.figure:empty {
+		display: none;
+	}
+
+	.figure .caption { /* Styling macthes Facebook Comments Box */
+		padding: 0 15px;
+		margin-bottom: 0;
+		color: gray;
+		font-size: 11px;
+		font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+		line-height: 1.28;
+	}
+
+.archive article,
+.catgory article,
+.navigation {
+	clear: both;
+}
+
+.navigation {
+	text-align: center;
+}
+	.navigation:empty {
+		display: none;
+	}
+
+.widget {
+	clear: both;
+}
+
+.error404 .widget {
+	width: 28%;
+	margin-right: 15px;
+	float: left;
+	clear: none;
+}
+
+#footer {
+	clear: both;
+}
+
+/* Social Media Buttons Sidebar
+-------------------------------------------------------------------------------*/
+.social-media {
+	width: 100%;
+	height: 46px;
+	margin-bottom: 45px;
+}
+
+	.social-media ul {
+		width: 300px; /* change width to achieve centering */
+		margin: 0 auto;
+	}
+
+	.social-media li {
+		width: 46px;
+		padding-right: 4px;
+		float: left;
+		margin-top: 15px;
+
+		/* Icon Bump Up Effect */
+		-webkit-transition: margin 0.3s ease-out;
+	    -moz-transition: margin 0.3s ease-out;
+	    -o-transition: margin 0.3s ease-out;
+	}
+		.social-media li:hover {
+			margin-top: 0px;
+		}
+
+	.social-media a {
+		height: 46px;
+	    display: block;
+	}
+
+.social-media #facebook {
+	background: url('img/sprites.png') no-repeat -9px -9px;
+}
+
+.social-media #twitter {
+	background: url('img/sprites.png') no-repeat -64px -9px;
+}
+
+.social-media #google-plus {
+	background: url('img/sprites.png') no-repeat -121px -9px;
+}
+
+.social-media #linkedin {
+	background: url('img/sprites.png') no-repeat -177px -9px;
+}
+
+.social-media #pinterest {
+	background: url('img/sprites.png') no-repeat -233px -9px;
+}
+
+.social-media #rss {
+	background: url('img/sprites.png') no-repeat -290px -9px;
+}
+
+/* Twitter
+-------------------------------------------------------------- */
+.tweet {
+	width:100%;
+	margin: 0;
+}
+
+	.tweet_list {
+		list-style: none !important;
+		padding-left: 0 !important;
+	}
+
+		.tweet_list .tweet_avatar {
+			float: left;
+			margin-right: 10px;
+		}
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+
+}
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+	
+		
+}
+
+@media all and (orientation: portrait) {
+	
+}
+
+@media all and (orientation: landscape) {
+	
+}
