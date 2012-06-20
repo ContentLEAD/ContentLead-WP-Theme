@@ -2,7 +2,7 @@
 
 ## Summary:
 
-Stripped down WordPress theme based on HTML5 Reset Theme (http://html5reset.org/).  with two style sheets. style.css imports simple.css to add some basic styling.
+Stripped down WordPress theme based on HTML5 Reset Theme (http://html5reset.org/).
 
 ## Special Features:
 
