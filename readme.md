@@ -1,21 +1,16 @@
-#  HTML5 Reset Wordpress Theme
+#  ContentLEAD Integration WordPress Theme
 
-## Summary:
+## SUMMARY:
 
-The HTML5 Reset Wordpress theme is a blank theme based on the [HTML5 Reset templates](https://github.com/murtaugh/HTML5-Reset). It's a great empty slate upon which to build your own HTML5-based Wordpress themes.
+Stripped down WordPress theme based on HTML5 Reset Theme (http://html5reset.org/).  with two style sheets. style.css imports simple.css to add some basic styling.
 
-### hNews
+## SPECIAL FEATURES:
 
-In addition to all the standard Wordpress elements and classes, we have added the code required so that the single post template conforms with the [hNews microformat](http://microformats.org/wiki/hnews).
+- 2 style sheets: style.css is completely stripped for usage with client's style sheets. simple.css (imported by style.css) adds some basic styling to the theme.
+- Sprite sheet for social media icons
+- Pagination for archives and categories instead of "Next Posts" and "Previous Posts"
+- 
 
-### HTML5 Reset brings to the table:
+## TO BE DONE
 
-1. A style sheet designed to strip initial files from browsers, meaning you start off with a blank slate.
-2. Easy to customize -- remove whatever you don't need, keep what you do.
-3. Analytics and jQuery snippets in place
-4. Meta tags ready for population
-5. Empty mobile and print style sheets, including blocks for device orientation
-6. Modernizr.js [http://www.modernizr.com/](http://www.modernizr.com/) enables HTML5 compatibility with IE (and a dozen other great features)
-7. IE-specific classes for simple CSS-targeting
-8. iPhone/iPad/iTouch icon snippets 
-9. Lots of other keen stuff...
+- 
