@@ -2,12 +2,12 @@
 
     <aside class="social-media">
         <ul>
-            <li><a id="facebook" target="_blank"href="http://www.facebook.com/ContentLEAD"></a></li>
-            <li><a id="twitter" target="_blank" href="https://twitter.com/#!/contentlead"></a></li>
-            <li><a id="google-plus" target="_blank" href="https://plus.google.com/101669842922792171283/"></a></li>
-            <li><a id="linkedin" target="_blank" href="http://www.linkedin.com/company/contentlead"></a></li>
-            <li><a id="pinterest" target="_blank" href="http://pinterest.com/ContentLEAD/"></a></li>
-            <li><a id="rss" target="_blank" href="<?php echo esc_url( home_url( '/' ) ); ?>?feed=rss2"></a></li>
+            <li><a id="facebook" target="_blank" href="http://www.facebook.com/ContentLEAD" rel="nofollow"></a></li>
+            <li><a id="twitter" target="_blank" href="https://twitter.com/#!/contentlead" rel="nofollow"></a></li>
+            <li><a id="google-plus" target="_blank" href="https://plus.google.com/101669842922792171283/" rel="nofollow"></a></li>
+            <li><a id="linkedin" target="_blank" href="http://www.linkedin.com/company/contentlead" rel="nofollow"></a></li>
+            <li><a id="pinterest" target="_blank" href="http://pinterest.com/ContentLEAD/" rel="nofollow"></a></li>
+            <li><a id="rss" target="_blank" href="<?php echo esc_url( home_url( '/' ) ); ?>feed/" rel="nofollow"></a></li>
         </ul>
     </aside>
 
