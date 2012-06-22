@@ -7,6 +7,11 @@
 <!--[if gt IE 9]><!--><html class="no-js" <?php language_attributes(); ?>><!--<![endif]-->
 <!-- the "no-js" class is for Modernizr. -->
 
+<!-- Fix for :empty psuedo selector in IE6-IE8 -->
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/selectivizr-min.js"></script>
+<![endif]-->
+
 <head id="www-sitename-com" data-template-set="html5-reset-wordpress-theme" profile="http://gmpg.org/xfn/11">
 
 	<meta charset="<?php bloginfo('charset'); ?>">
