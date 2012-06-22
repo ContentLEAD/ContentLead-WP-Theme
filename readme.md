@@ -24,7 +24,6 @@ Stripped down WordPress theme based on HTML5 Reset Theme (http://html5reset.org/
 - use "Regenerate Thumbnails" plugin (http://wordpress.org/extend/plugins/regenerate-thumbnails/) to resize thumnails to custom sizes if needed 
 
 ## To Be Done:
-- :empty pseudo class does not work in older browsers -> workaround with modernizr/javascript needed (single image border/background style.css line 103 and pagination border style.css line 125)
 - Use icon font for email input field
 - Replace hardcoded Mailchimp sign up form with AJAX WordPress plugin (http://wordpress.org/extend/plugins/mailchimp-widget/)
 - Implement full AJAX contact form for sidebar (plugin vs. coded?!?)
