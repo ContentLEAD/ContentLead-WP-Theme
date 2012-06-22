@@ -337,25 +337,32 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 
 }
 	
-	#mc-signup input {
-		width: 100%;
+	#mc-signup .email {
+		width: 100%; 
 		height: 46px;
 		display: inline-block;
 		text-decoration: none;
-		padding: 3px 10px;
 		color: #555;
 		border: 1px solid #dedede;
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
 		border-radius: 3px;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;    
-		box-sizing: border-box;
-	}
-	
-	#mc-signup input[type="email"] {
 		margin-bottom: 15px;
-	}	
+		padding: 0 10px;
+		-webkit-box-sizing: border-box; 
+		-moz-box-sizing: border-box;    
+		box-sizing: border-box;         
+	}
+
+		.ie7 #mc-signup .email { /* IE7 */
+			width: 266px; /* Needs to be adjusted depending on sidebar width */
+			height: auto;
+		}
+
+		.ie8 #mc-signup .email { /* IE8 */
+			height: auto; 
+		}
+	
 		#mc-signup input[type="email"]::-webkit-input-placeholder  { font-style:italic; }
 		#mc-signup input[type="email"]:-moz-placeholder { font-style:italic;  }
 
