@@ -290,6 +290,7 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 #mc-signup-submit {
 	display: block;
 	background-color: #f7f7f7;
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#aeaeae'); /*  IE */
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#cacaca), to(#aeaeae));
 	background-image: -webkit-linear-gradient(top, #cacaca, #aeaeae); 
 	background-image: -moz-linear-gradient(top, #cacaca, #aeaeae); 
@@ -319,6 +320,7 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 	#mc-signup-submit:focus,
 	#mc-signup-submit:active {
 		background: #dedede;
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#dedede'); /*  IE */
 		border-color: #989898 #8e8e8e #878787;
 		text-shadow: 0 1px 0 #dadada;
 	}
