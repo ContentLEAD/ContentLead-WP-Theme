@@ -100,15 +100,48 @@
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	
 	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
-	<script src="<?php bloginfo('template_directory'); ?>/js/modernizr-1.7.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/modernizr.custom.min.js"></script>
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 	<?php wp_head(); ?>
+
+	<script>
+	$(document).ready(function(){
+
+	/* Placeholder fix IE */
+	if(!Modernizr.input.placeholder){
+
+		$('[placeholder]').focus(function() {
+		  var input = $(this);
+		  if (input.val() == input.attr('placeholder')) {
+			input.val('');
+			input.removeClass('placeholder');
+		  }
+		}).blur(function() {
+		  var input = $(this);
+		  if (input.val() == '' || input.val() == input.attr('placeholder')) {
+			input.addClass('placeholder');
+			input.val(input.attr('placeholder'));
+		  }
+		}).blur();
+		$('[placeholder]').parents('form').submit(function() {
+		  $(this).find('[placeholder]').each(function() {
+			var input = $(this);
+			if (input.val() == input.attr('placeholder')) {
+			  input.val('');
+			}
+		  })
+		});
+
+	}
+
+	});
+	</script>
 	
 </head>
 
-<body <?php body_class(); ?>
+<body <?php body_class(); ?>>
 
