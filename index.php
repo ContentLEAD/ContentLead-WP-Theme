@@ -82,11 +82,11 @@
 			</div><!-- End .right-col -->
 
 
-			<?php else : ?> <!-- TBD 404 PAGE -->
+			<?php else : ?> <!-- No Articles -->
 
-				<h2>Not Found</h2>
+				<h2>No articles posted yet! Come back soon.</h2>
 
-			<?php endif; ?>
+			<?php endif; ?> 
 
 		</div>
 	
