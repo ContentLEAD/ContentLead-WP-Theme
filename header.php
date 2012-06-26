@@ -12,7 +12,7 @@
   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/selectivizr-min.js"></script>
 <![endif]-->
 
-<head id="www-sitename-com" data-template-set="html5-reset-wordpress-theme" profile="http://gmpg.org/xfn/11">
+<head>
 
 	<meta charset="<?php bloginfo('charset'); ?>">
 	
@@ -23,8 +23,7 @@
 	<meta name="robots" content="noindex, nofollow" /> 
 	<?php } ?>
 
-	<title>
-		   <?php
+	<title><?php
 		      if (function_exists('is_tag') && is_tag()) {
 		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
@@ -41,8 +40,7 @@
 		          bloginfo('name'); }
 		      if ($paged>1) {
 		         echo ' - page '. $paged; }
-		   ?>
-	</title>
+		   ?></title>
 	
 	<meta name="title" content="<?php
 		      if (function_exists('is_tag') && is_tag()) {
@@ -65,24 +63,7 @@
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	
 	<meta name="google-site-verification" content="">
-	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
-	
-	<meta name="author" content="Your Name Here">
-	<meta name="Copyright" content="Copyright Your Name Here 2011. All Rights Reserved.">
-
-	<!-- Dublin Core Metadata : http://dublincore.org/ -->
-	<meta name="DC.title" content="Project Name">
-	<meta name="DC.subject" content="What you're about.">
-	<meta name="DC.creator" content="Who made this site.">
-	
-	<!--  Mobile Viewport meta tag
-	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
-	device-width : Occupy full width of the screen in its current orientation
-	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
-	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width -->
-	<!-- Uncomment to use; use thoughtfully!
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	-->
+	<!-- Expedites adding site to Google Webmaster Tools http://google.com/webmasters -->
 	
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
 	<!-- This is the traditional favicon.
@@ -107,39 +88,6 @@
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 	<?php wp_head(); ?>
-
-	<script>
-	$(document).ready(function(){
-
-	/* Placeholder fix IE */
-	if(!Modernizr.input.placeholder){
-
-		$('[placeholder]').focus(function() {
-		  var input = $(this);
-		  if (input.val() == input.attr('placeholder')) {
-			input.val('');
-			input.removeClass('placeholder');
-		  }
-		}).blur(function() {
-		  var input = $(this);
-		  if (input.val() == '' || input.val() == input.attr('placeholder')) {
-			input.addClass('placeholder');
-			input.val(input.attr('placeholder'));
-		  }
-		}).blur();
-		$('[placeholder]').parents('form').submit(function() {
-		  $(this).find('[placeholder]').each(function() {
-			var input = $(this);
-			if (input.val() == input.attr('placeholder')) {
-			  input.val('');
-			}
-		  })
-		});
-
-	}
-
-	});
-	</script>
 	
 </head>
 
