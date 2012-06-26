@@ -250,12 +250,14 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 .category article,
 .archive article,
 .page-title,
+#respond,
+#social-tabs-comments,
 .navigation {
-	border: 1px solid #dedede;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	padding: 15px;
+	border: 1px solid #dedede !important;
+	-webkit-border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	border-radius: 3px !important;
+	padding: 15px !important;
 }
 
 .news-category h1 {
@@ -273,6 +275,10 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 
 .widget-title {
 	margin-bottom: 15px;
+}
+
+.single #sidebar {
+	width: 32%;
 }
 
 .single-img-caption {
