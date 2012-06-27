@@ -26,9 +26,6 @@
 	<title><?php wp_title(''); ?></title>
 	<meta name="title" content="<?php wp_title(''); ?>">
 	
-	<meta name="google-site-verification" content="">
-	<!-- Expedites adding site to Google Webmaster Tools http://google.com/webmasters -->
-	
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
 	<!-- This is the traditional favicon.
 		 - size: 16x16 or 32x32
