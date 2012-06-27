@@ -5,14 +5,14 @@
 /* trigger when page is ready */
 $(document).ready(function (){
 
-	// your functions go here
+	/* removes comments div (#social-tabs-comments) for social plugin, 
+	   if there are no comments (Hack since :empty selector is not working!?!)
+	 */
+	if( !$.trim( $('#social-tabs-comments').html() ).length ) {
+		$('#social-tabs-comments').remove();
+	}
 
-});
-
-/* Placeholder fix IE */
-$(document).ready(function(){
-
-	
+	/* Placeholder fix IE */
 	if(!Modernizr.input.placeholder){
 
 		$('[placeholder]').focus(function() {

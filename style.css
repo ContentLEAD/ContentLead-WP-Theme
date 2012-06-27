@@ -141,13 +141,6 @@ Version: 1.0
 	clear: both;
 }
 
-/* Comment Plugin (http://mailchimp.com/social-plugin-for-wordpress/)
--------------------------------------------------------------------------------*/
-#social .social-replied,
-#social .social-pingback {
-	display: none !important;
-}
-
 /* Social Media Buttons Sidebar
 -------------------------------------------------------------------------------*/
 .social-media {

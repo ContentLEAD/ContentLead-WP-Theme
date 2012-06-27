@@ -285,6 +285,21 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 	margin-bottom: 0;
 }
 
+/* Comment Plugin (http://mailchimp.com/social-plugin-for-wordpress/)
+-------------------------------------------------------------------------------*/
+#social {
+	margin: 30px 0 !important;
+}
+
+#social-tabs-comments:empty {
+	border: none;
+}
+
+#social .social-replied,
+#social .social-pingback {
+	display: none !important;
+}
+
 /* Buttons
 -------------------------------------------------------------- */
 
