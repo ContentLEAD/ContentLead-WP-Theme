@@ -28,6 +28,7 @@ Stripped down WordPress theme based on HTML5 Reset Theme (http://html5reset.org/
 - Social by MailChimp (http://mailchimp.com/social-plugin-for-wordpress/) enables commeting with Twitter and/or Facebook Login
 - W3 Total Cache (http://wordpress.org/extend/plugins/w3-total-cache/)
 - WordPress SEO by Yoast (http://yoast.com/wordpress/seo/) takes care of XML sitemap, meta tags, open graph meta tags, etc.
+- Google Analytics for WordPress by Yoast (http://yoast.com/wordpress/google-analytics/)
 - WordPress Popular Posts
 - Yet Another Related Posts Plugin
 
