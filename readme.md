@@ -34,7 +34,7 @@ Stripped down WordPress theme based on HTML5 Reset Theme (http://html5reset.org/
 
 ## To Be Done:
 - Use icon font for email input field
-- Replace hardcoded Mailchimp sign up form with AJAX WordPress plugin (http://wordpress.org/extend/plugins/mailchimp-widget/)
+- Replace hardcoded Mailchimp sign up form with AJAX WordPress plugin (http://wordpress.org/extend/plugins/newsletter-sign-up/)
 - Implement full AJAX contact form for sidebar (plugin vs. coded?!?)
 - Add Admin section for theme on backend of WordPress
 - Latest News slider
