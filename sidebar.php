@@ -14,14 +14,11 @@
     <!-- Contact Us Button -->
     <a id="contact-button" href="#"><i class="icon-phone"></i> Contact Us</a>
 
-    <!-- Begin MailChimp Signup Form -->
-    <aside id="mc-signup" class="widget">
-        <h3 id="mc-title" class="widget-title">Newsletter</h3>  
-        <form action="GET_FROM_MAILCHIMP_LIST" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="john.doe@company.com" required>
-            <a id="mc-signup-submit" href="#" onclick="$(this).closest('form').submit()">Subscribe</a>
-        </form>
-    </aside> 
+    <!-- Begin MailChimp Signup Form-->
+    <aside id="mc-sign-up" class="widget">
+        <h3 class="widget-title">Newsletter</h3>
+        <?php echo do_shortcode( '[contact-form-7 id="614" title="MailChimp Sign Up Form"]' ); ?>
+    </aside> <!--End MailChimp Signup Form -->
 
     <!-- Begin Facebook Like Box -->
     <aside id="fb-like-box" class="widget">

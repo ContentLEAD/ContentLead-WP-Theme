@@ -300,11 +300,22 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 	display: none !important;
 }
 
-/* Buttons
+/* Contact Form 7
 -------------------------------------------------------------- */
 
-#contact-button,
-#mc-signup-submit {
+.wpcf7 p {
+	margin-bottom: 0;
+}
+
+
+.wpcf7 .ajax-loader {
+	display: none;
+}
+
+/* CF7 Buttons */
+.wpcf7-submit,
+#contact-button {
+	width: 100%;
 	display: block;
 	background-color: #f7f7f7;
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#aeaeae'); /*  IE */
@@ -316,7 +327,7 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 
 	color: #555;
 
-	border-color: #989898 #8e8e8e #878787;
+	border: none;
 
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -330,12 +341,12 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 	text-shadow: 0 1px 0 #d4d4d4;
 }
 
+	.wpcf7-submit:hover,
+	.wpcf7-submit:focus,
+	.wpcf7-submit:active,
 	#contact-button:hover,
 	#contact-button:focus,
-	#contact-button:active,
-	#mc-signup-submit:hover,
-	#mc-signup-submit:focus,
-	#mc-signup-submit:active {
+	#contact-button:active {
 		background: #dedede;
 		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#dedede'); /*  IE */
 		border-color: #989898 #8e8e8e #878787;
@@ -343,20 +354,16 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 	}
 
 #contact-button {
+	width: auto;
 	margin-left: 15px;
 	margin-right: 15px;
 }
 
-
-/* MailChimp Sign-Up
--------------------------------------------------------------- */
-#mc-signup {
-
-}
-	
-	#mc-signup .email {
-		width: 100%; 
-		height: 46px;
+/* CF7 Text Fields */
+.wpcf7-text,
+.wpcf7-response-output,
+.wpcf7-not-valid-tip {
+		width: 100% !important; 
 		display: inline-block;
 		text-decoration: none;
 		color: #555;
@@ -364,24 +371,79 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
 		border-radius: 3px;
-		margin-bottom: 15px;
 		padding: 0 10px;
 		-webkit-box-sizing: border-box; 
 		-moz-box-sizing: border-box;    
 		box-sizing: border-box;         
 	}
 
-		.ie7 #mc-signup .email { /* IE7 */
-			width: 266px; /* Needs to be adjusted depending on sidebar width */
-			height: auto;
-		}
+.wpcf7-text {
+	height: 46px;
+}
 
-		.ie8 #mc-signup .email { /* IE8 */
-			height: auto; 
-		}
-	
-		#mc-signup input[type="email"]::-webkit-input-placeholder  { font-style:italic; }
-		#mc-signup input[type="email"]:-moz-placeholder { font-style:italic;  }
+	.ie7 .wpcf7-text { /* IE7 */
+		width: 266px !important; /* Needs to be adjusted depending on sidebar width */
+		height: auto;
+		padding: 0 !important;
+	}
+
+	.ie8 .wpcf7-text { /* IE8 */
+		height: auto; 
+	}
+
+.wpcf7-not-valid-tip {
+	margin-top: 5px;
+	padding: 0 5px !important;
+}
+
+.wpcf7-not-valid-tip {
+	background: #FF9494 !important;
+	color: white;
+	border: none !important;
+	position: static !important;
+}
+
+	.ie7 .wpcf7-not-valid-tip { /* IE7 */
+		width: 266px !important; /* Needs to be adjusted depending on sidebar width */
+		padding: 0 !important;
+	}
+
+.wpcf7-response-output {
+	border: none !important;
+	margin: 15px 0 0 !important;
+	margin-top: 15px;
+}
+
+.wpcf7-mail-sent-ok {
+	background: #c5e6b1;
+	color: white;
+}
+
+.wpcf7-mail-sent-ng {
+	background: #FF9494;
+	color: white;
+}
+
+.wpcf7-spam-blocked {
+	background: #FEC993;
+	color: white;
+}
+
+.wpcf7-validation-errors {
+	background: #FF9494;
+	color: white;
+}
+
+.wpcf7-submit {
+	margin-top: 15px;
+}
+
+/* MailChimp Sign-Up
+-------------------------------------------------------------- */
+
+#mc-sign-up .wpcf7-validation-errors {
+	display: none !important;
+}
 
 /* Twitter
 -------------------------------------------------------------- */
