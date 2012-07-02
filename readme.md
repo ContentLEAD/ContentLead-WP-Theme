@@ -2,14 +2,16 @@
 
 ## Summary:
 
-Stripped down WordPress theme based on HTML5 Reset Theme (http://html5reset.org/) to replicate design of non-WordPress based web sites.
+Stripped down WordPress theme based on HTML5 Reset Theme (http://html5reset.org/) to replicate design of non-WordPress based web sites. See the theme live at http://tech.contentlead.com/test-wordpress/. 
 
 ## Special Features:
 
+- All areas and images are designed using a simple "Golden Ratio" layout (http://en.wikipedia.org/wiki/Golden_ratio)
 - 2 style sheets: style.css is completely stripped for usage with client's style sheets. simple.css (imported by style.css) adds some basic styling to the theme.
 - Pagination for archives and categories instead of "Next Posts" and "Previous Posts"
 - Sprite sheet for social media icons
 - CSS3 transition for simple social media icon "bump up" effect
+- AJAX contact form and newsletter sign-up
 - Icon Font Implementation (http://fortawesome.github.com/Font-Awesome/, only for contact button so far)
 - Hardcoded Facebook Like box 
 - Hardcoded Tweets with Tweet! Javascript (http://tweet.seaofclouds.com/)
