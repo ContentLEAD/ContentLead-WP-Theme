@@ -23,9 +23,6 @@ Stripped down WordPress theme based on HTML5 Reset Theme (http://html5reset.org/
 - Nr. of posts in latest news (index.php line 9 $latest_news_show)
 - Nr. of posts per category on index page (index.php line 36 $category_post_show)
 
-## Images:
-- use "Regenerate Thumbnails" plugin (http://wordpress.org/extend/plugins/regenerate-thumbnails/) to resize thumnails to custom sizes if needed 
-
 ## Recommended Plugins:
 - Brafton API
 - Social by MailChimp (http://mailchimp.com/social-plugin-for-wordpress/) enables commeting with Twitter and/or Facebook Login
@@ -35,9 +32,15 @@ Stripped down WordPress theme based on HTML5 Reset Theme (http://html5reset.org/
 - WordPress Popular Posts
 - Yet Another Related Posts Plugin
 
+## Images:
+- use "Regenerate Thumbnails" plugin (http://wordpress.org/extend/plugins/regenerate-thumbnails/) to resize thumnails to custom sizes if needed 
 
 ## To Be Done:
-- Use icon font for email input field
+- Custom Post Type for Product
+- Preview Newsletter
+- Date Icon & Ribbon
+- Icons for contact form & newsletter input fields
+- FeedBurner Inegration
 - Add Admin section for theme on backend of WordPress
 - Latest News slider
 - Design/Implement different selectable layouts for index.php
