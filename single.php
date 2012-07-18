@@ -14,6 +14,14 @@
 			</header>
 
 			<div class="entry-content">
+
+				<!-- share this social plugins -->
+				<div class="social-sharing"><span class='st_facebook_hcount' displayText='Facebook'></span>
+					<span class='st_twitter_hcount' displayText='Tweet'></span>
+					<span class='st_googleplus_hcount' displayText='Google +'></span>
+					<span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+					<span class='st_pinterest_hcount' displayText='Pinterest'></span>
+				</div>
 					
 				<div class="figure"><?php echo get_the_post_thumbnail(get_the_ID(), 'news-category-thumb'); ?>
 					<p class="caption"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>	

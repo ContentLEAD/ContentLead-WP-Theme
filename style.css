@@ -141,6 +141,14 @@ Version: 1.0
 	clear: both;
 }
 
+/* Social Media Sharing Posts
+-------------------------------------------------------------------------------*/
+.social-sharing {
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* Social Media Buttons Sidebar
 -------------------------------------------------------------------------------*/
 .social-media {
