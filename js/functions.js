@@ -12,6 +12,27 @@ $(document).ready(function (){
 		$('#social-tabs-comments').remove();
 	}
 
+	/* Adds placeholders to "Social" comment form plugin
+	 */
+	if ( $('#author').length > 0 ) { 
+    	$('#author').attr('placeholder', 'Your Name');
+    }
+
+    if ( $('#email').length > 0 ) { 
+		$('#email').attr('placeholder', 'Your Email');
+	}
+
+	if ( $('#url').length > 0 ) { 
+		$('#url').attr('placeholder', 'Your Website');
+	}
+	if ( $('#comment').length > 0 ) { 
+		$('#comment').attr('placeholder', 'Your Comment');
+	}
+
+	if ( $('#comment').length > 0 ) { 
+		$('#submit').attr('value', 'Comment');
+	}
+
 	/* Placeholder fix IE */
 	if(!Modernizr.input.placeholder){
 

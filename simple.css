@@ -291,8 +291,124 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 	margin: 30px 0 !important;
 }
 
-#social-tabs-comments:empty {
+#social #reply-title,
+#social .social-help,
+#social .social-last-reply-when,
+.social-posted-from {
+	display:none !important;
+}
+
+#social .social-input-row label {
+	position: absolute !important;
+	left: -9999px !important;
+}
+
+#social .social-input-row {
+	margin-bottom: 15px !important;
+	padding-left: 0px !important;
+}
+
+#social input.social-input, 
+#social textarea.social-input, 
+#social .social-select {
+	background: none !important;
+	display: inline-block;
+	text-decoration: none;
+	color: #555;
+	border: 1px solid #dedede !important;
+	-webkit-border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	border-radius: 3px !important;
+	padding: 0 10px !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+#social input.social-input,  
+#social .social-select {
+	width: 100% !important;
+	height: 46px !important;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;
+}
+
+#social textarea.social-input {
+	padding-top: 20px;
+	width: 61.8%;
+}
+
+#social .form-submit {
+	padding-left: 0px !important;
+	height: 46px !important;
+}
+
+#social input#submit {
+	width: 38.19%;
+	padding-left: 0px !important;
+	display: block;
+	background-color: #f7f7f7 !important;
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#aeaeae') !important; /*  IE */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#cacaca), to(#aeaeae)) !important;
+	background-image: -webkit-linear-gradient(top, #cacaca, #aeaeae) !important; 
+	background-image: -moz-linear-gradient(top, #cacaca, #aeaeae) !important; 
+	background-image: -ms-linear-gradient(top, #cacaca, #aeaeae) !important; 
+	background-image: -o-linear-gradient(top, #cacaca, #aeaeae) !important;
+
+	font: 16px sans-serif !important;
+	color: #555 !important;
+
 	border: none;
+
+	-webkit-border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	border-radius: 3px !important;
+
+	height: 46px !important;
+	position: relative !important;
+	text-align: center !important;
+
+	text-shadow: 0 1px 0 #d4d4d4 !important;
+}
+
+	#social input#submit:hover,
+	#social input#submit:active,
+	#social input#submit:focus {
+		background: #dedede !important;
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#dedede') !important; /*  IE */
+		text-shadow: 0 1px 0 #dadada !important;
+		border: none !important;
+	}
+
+#social .social-identity {
+	margin-top: 0px !important;
+	margin-bottom: 33px !important;
+}
+
+.logged-in #social .social-identity .social-input-row {
+	padding-left: 50px !important;
+}
+
+#social .social-nav {
+	background: none !important;
+}
+
+#social .social-nav li a {
+	text-decoration: none;
+}
+
+#social .social-nav .social-current-tab {
+	background: #DEDEDE !important;
+
+	-webkit-border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	border-radius: 3px !important;
+}
+
+#social .social-nav .social-current-tab a {
+	background: none !important;
+	text-decoration: none !important;
 }
 
 #social .social-replied,
@@ -349,7 +465,6 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 	#contact-button:active {
 		background: #dedede;
 		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#dedede'); /*  IE */
-		border-color: #989898 #8e8e8e #878787;
 		text-shadow: 0 1px 0 #dadada;
 	}
 
