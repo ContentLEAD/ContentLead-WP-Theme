@@ -89,14 +89,14 @@ Version: 1.0
 	margin-bottom: 30px;
 }
 
-.figure { /* Styling macthes Facebook Comments Box */
+.figure {
 	float: right;
 	max-width: 50%;
 	padding: 8px;
 	margin: 0 0 15px 15px;
 	background-color: transparent;
 	background-color: rgba(190, 190, 190, .2);
-	border: 1px solid #E9E9E9;
+	border: 1px solid #dedede;
 	text-align: center;
 }
 

@@ -217,6 +217,26 @@ h3 {
 	font-size: 1.125em !important;
 }
 
+img {
+	-webkit-border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	border-radius: 3px !important;
+}
+
+.figure {
+	float: right;
+	max-width: 50%;
+	padding: 8px;
+	margin: 0 0 15px 15px;
+	background-color: transparent;
+	background-color: rgba(222, 222, 222, .2);
+	border: 1px solid #dedede;
+	-webkit-border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	border-radius: 3px !important;
+	text-align: center;
+}
+
 /* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
 ::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
 ::selection {background: #fcd700; color: #fff; text-shadow: none;} 
@@ -350,16 +370,16 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 	display: block;
 	background-color: #f7f7f7 !important;
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#aeaeae') !important; /*  IE */
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#cacaca), to(#aeaeae)) !important;
-	background-image: -webkit-linear-gradient(top, #cacaca, #aeaeae) !important; 
-	background-image: -moz-linear-gradient(top, #cacaca, #aeaeae) !important; 
-	background-image: -ms-linear-gradient(top, #cacaca, #aeaeae) !important; 
-	background-image: -o-linear-gradient(top, #cacaca, #aeaeae) !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#a7a7a7)) !important;
+	background-image: -webkit-linear-gradient(top, #dedede, #a7a7a7) !important; 
+	background-image: -moz-linear-gradient(top, #dedede, #a7a7a7) !important; 
+	background-image: -ms-linear-gradient(top, #dedede, #a7a7a7) !important; 
+	background-image: -o-linear-gradient(top, #dedede, #a7a7a7) !important;
 
 	font: 16px sans-serif !important;
 	color: #555 !important;
 
-	border: none;
+	border: none !important;
 
 	-webkit-border-radius: 3px !important;
 	-moz-border-radius: 3px !important;
@@ -376,7 +396,6 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 	#social input#submit:active,
 	#social input#submit:focus {
 		background: #dedede !important;
-		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#dedede') !important; /*  IE */
 		text-shadow: 0 1px 0 #dadada !important;
 		border: none !important;
 	}
@@ -435,11 +454,11 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 	display: block;
 	background-color: #f7f7f7;
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#aeaeae'); /*  IE */
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#cacaca), to(#aeaeae));
-	background-image: -webkit-linear-gradient(top, #cacaca, #aeaeae); 
-	background-image: -moz-linear-gradient(top, #cacaca, #aeaeae); 
-	background-image: -ms-linear-gradient(top, #cacaca, #aeaeae); 
-	background-image: -o-linear-gradient(top, #cacaca, #aeaeae);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#a7a7a7));
+	background-image: -webkit-linear-gradient(top, #dedede, #a7a7a7); 
+	background-image: -moz-linear-gradient(top, #dedede, #a7a7a7); 
+	background-image: -ms-linear-gradient(top, #dedede, #a7a7a7); 
+	background-image: -o-linear-gradient(top, #dedede, #a7a7a7);
 
 	color: #555;
 
@@ -464,8 +483,7 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 	#contact-button:focus,
 	#contact-button:active {
 		background: #dedede;
-		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#dedede'); /*  IE */
-		text-shadow: 0 1px 0 #dadada;
+		text-shadow: 0 1px 0 #d4d4d4;
 	}
 
 #contact-button {
