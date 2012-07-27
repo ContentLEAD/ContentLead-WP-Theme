@@ -33,6 +33,26 @@ $(document).ready(function (){
 		$('#submit').attr('value', 'Comment');
 	}
 
+	/* Adds placeholders to "Contact Us" form
+	 */
+	if ( $('#cf7-contact-us-name').length > 0 ) { 
+		$('#cf7-contact-us-name').attr('placeholder', 'Your Name');
+	}
+
+	if ( $('#cf7-contact-us-email').length > 0 ) { 
+		$('#cf7-contact-us-email').attr('placeholder', 'Your Email');
+	}
+
+	if ( $('#cf7-contact-us-message').length > 0 ) { 
+		$('#cf7-contact-us-message').attr('placeholder', 'Your Message for Us');
+	}
+
+	/* Adds placeholders to "Mailchimp Sign Up" form
+	 */
+	 if ( $('#mc-sign-up-email').length > 0 ) { 
+		$('#mc-sign-up-email').attr('placeholder', 'Enter Your Email Here');
+	}
+
 	/* Placeholder fix IE */
 	if(!Modernizr.input.placeholder){
 

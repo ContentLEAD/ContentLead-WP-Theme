@@ -6,8 +6,180 @@ Author URI: http://contentlead.com
 Version: 1.0
 */
 
-/* IMPORTS BASIC CONTENT LEAD STYLE SHEET */
-@import url("simple.css");   
+/*
+	HTML5 Reset Wordpress Theme :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+	
+	Eric Meyer					:: http://ericmeyer.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+	
+	Special thanks: The Wordpress theme owes its start to an empty theme authored 
+		by Chris Coyier & Jeff Starr: http://digwp.com
+	
+-------------------------------------------------------------------------------*/
+
+/* News section default
+-------------------------------------------------------------------------------*/
+
+object,#news iframe,#news h1,#news h2,#news h3,#news h4,#news h5,#news h6,#news p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}									
+
+#news article, #news aside, #news figure, #news footer, #news header, #news hgroup, #news nav, #news section {display: block;}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites, like, say for Google Maps custom placemarkers. 
+   There has been a report of problems with standard Google maps as well, but we haven't been able to duplicate or diagnose the issue. */
+#news img,
+#news object,
+#news embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted. 
+	don't forget to restore the bullets within content. */
+#news ul {list-style: none;}
+
+#news blockquote, #news q {quotes: none;}
+
+#news blockquote:before, 
+#news blockquote:after, 
+#news q:before, 
+#news q:after {content: ''; content: none;}
+
+#news a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+#news del {text-decoration: line-through;}
+
+#news abbr[title], #news dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+#news table {border-collapse: collapse; border-spacing: 0;}
+#news th {font-weight: bold; vertical-align: bottom;}
+#news td {font-weight: normal; vertical-align: top;}
+
+#news hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+#news input, #news select {vertical-align: middle;}
+
+#news pre {
+	white-space: pre; /* CSS2 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
+}
+
+#news input[type="radio"] {vertical-align: text-bottom;}
+#news input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+.ie6 #news input {vertical-align: text-bottom;}
+
+#news select, #news input, #news textarea {font: 99% sans-serif;}
+
+#news table {font-size: inherit; font: 100%;}
+ 
+/* Accessible focus treatment
+	people.opera.com/patrickl/experiments/keyboard/test */
+#news a:hover, #news a:active {outline: none;}
+
+#news small {font-size: 85%;}
+
+#news strong, #news th {font-weight: bold;}
+
+#news td, #news td img {vertical-align: top;} 
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+#news sub, #news sup {font-size: 75%; line-height: 0; position: relative;}
+#news sup {top: -0.5em;}
+#news sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+#news pre, #news code, #news kbd, #news samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+#news .clickable,
+#news label, 
+#news input[type=button], 
+#news input[type=submit], 
+#news button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+#news button, #news input, #news select, #news textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+#news button {width: auto; overflow: visible;}
+ 
+/* scale images in IE7 more attractively */
+.ie7 #news img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover */
+.ie6 #news html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/* let's clear some floats */
+#news .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+#news .clearfix:after { clear: both; }  
+#news .clearfix { zoom: 1; }
+
+/* Font Awesome 
+-------------------------------------------------------------- */
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url('font/fontawesome-webfont.eot');
+  src: url('font/fontawesome-webfont.eot?#iefix') format('eot'), url('font/fontawesome-webfont.woff') format('woff'), url('font/fontawesome-webfont.ttf') format('truetype'), url('font/fontawesome-webfont.svg#FontAwesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+/* makes the font 33% larger relative to the icon container */
+.icon-large:before {
+  vertical-align: top;
+  font-size: 1.3333333333333333em;
+}
+.btn [class^="icon-"], .btn [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+
+  line-height: .9em;
+}
+li [class^="icon-"], li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+  width: 1.875em;
+}
+li[class^="icon-"], li[class*=" icon-"] {
+  margin-left: 0;
+  list-style-type: none;
+}
+li[class^="icon-"]:before, li[class*=" icon-"]:before {
+  text-indent: -2em;
+  text-align: center;
+}
+li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
+  text-indent: -1.3333333333333333em;
+}
+
+.icon-phone:before { content: "\f095"; }
 
 /* And here begins the Wordpress fun.
 -------------------------------------------------------------------------------*/
@@ -15,10 +187,77 @@ Version: 1.0
 #news {
 	width: 1000px;
 	margin: 30px auto;
+	font: 16px sans-serif;
 }
 
-.author {
+#news p {
+	margin-bottom: 1.625em;
+	line-height: 140%;
+}
+
+#news, #news select, #news input, #news textarea {color: #333;}
+
+#news a {
+	color: #03f;
+	text-decoration: none;
+}
+
+#news a:hover {
+	color: #69f;
+}
+
+#news h1 {
+	font-size: 1.75em;
+}
+
+#news h2 {
+	font-size: 1.25em ;
+}
+
+#news h3 {
+	font-size: 1.125em;
+}
+
+#news img {
+	-webkit-border-radius: 3px ;
+	-moz-border-radius: 3px ;
+	border-radius: 3px;
+}
+
+#news .figure {
+	float: right;
+	max-width: 50%;
+	padding: 8px;
+	margin: 0 0 15px 15px;
+	background-color: transparent;
+	background-color: rgba(222, 222, 222, .2);
+	border: 1px solid #dedede;
+	-webkit-border-radius: 3px ;
+	-moz-border-radius: 3px ;
+	border-radius: 3px;
+	text-align: center;
+}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+#news ::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+#news ::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+/* j.mp/webkit-tap-highlight-color */
+#news a:link {-webkit-tap-highlight-color: #fcd700;} 
+
+#news ins {background-color: #fcd700; color: #000; text-decoration: none;}
+#news mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+
+/* Finally, let's start on the major components of our theme
+-------------------------------------------------------------------------------*/
+
+#news .author {
 	display: none;
+}
+
+#news time {
+	font-size: 0.8em;
 }
 
 #primary,
@@ -31,16 +270,49 @@ Version: 1.0
 
 #latest-news,
 .news-category {
+	display: block;
 	margin-bottom: 30px;
+	padding-bottom: 15px;
 }
 
+	#news .news-category .category-title {
+		margin-bottom: 15px;
+		font-size: 1.5em;
+	}
+
+	#news .news-category .entry-title {
+		font-size: 1.25em;
+	}
+
 #sidebar {
-	width: 32.6%;
+	width: 32%;
 	float: right;
 }
 
-#news .hentry:last-child {
+#news .hentry:last-child,
+#news #pnf404 article {
+	border-bottom: 0;
+	padding-bottom: 0;
 	margin-bottom: 0;
+}
+
+#news .page-title,
+#latest-news,
+.news-category,
+.widget,
+.single .entry-header,
+.single .entry-content,
+.category article,
+.archive article,
+.page-title,
+#news #social #respond,
+#social-tabs-comments,
+.navigation {
+	border: 1px solid #dedede;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 15px;
 }
 
 #latest-news img,
@@ -54,15 +326,27 @@ Version: 1.0
 
 #latest-news article,
 .archive article,
-.category article {
+.category article,
+.news-category article {
 	display: block;
 	overflow:auto;
 	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #DEDEDE;
 }
 
 	#latest-news article .entry-header,
-	.news-category article .entry-header {
+	.news-category article .entry-header,
+	.archive article .entry-header  {
+		margin-bottom: 10px;
+	}
+
+		.news-category article .entry-header img{
 		margin-bottom: 15px;
+	}
+
+	#news .news-category article p {
+		margin-bottom: 0;
 	}
 
 #latest-news p,
@@ -80,9 +364,10 @@ Version: 1.0
 	float:right;
 }
 
+#news .page-title,
 .social-media,
 .widget,
-#contact-button,
+#news #contact-button,
 .page-title,
 .single .entry-header,
 .single .entry-header {
@@ -108,18 +393,31 @@ Version: 1.0
 	clear: both;
 }
 
-.navigation {
+#news .navigation {
 	text-align: center;
 }
 	.navigation:empty {
 		display: none;
 	}
 
-.widget {
+#news .widget {
 	clear: both;
 }
 
-.error404 .widget {
+#news .widget-title {
+	margin-bottom: 15px;
+}
+
+	#news .widget ul {
+		list-style: circle;
+		padding-left: 1.5em;
+	}
+
+	#news .widget p {
+		margin-bottom: 0;
+	}
+
+.error404 #news .widget {
 	width: 28%;
 	margin-right: 15px;
 	float: left;
@@ -136,6 +434,139 @@ Version: 1.0
 	margin-bottom: 15px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+/* Comment Plugin (http://mailchimp.com/social-plugin-for-wordpress/)
+-------------------------------------------------------------------------------*/
+#social {
+	margin: 30px 0 !important;
+}
+
+#social #reply-title,
+#social .social-help,
+#social .social-last-reply-when,
+.social-posted-from {
+	display:none !important;
+}
+
+#social .social-input-row label {
+	position: absolute !important;
+	left: -9999px !important;
+}
+
+#social .social-input-row {
+	margin-bottom: 15px !important;
+	padding-left: 0px !important;
+}
+
+#social input.social-input, 
+#social textarea.social-input, 
+#social .social-select {
+	background: none !important;
+	display: inline-block;
+	text-decoration: none;
+	color: #555;
+	border: 1px solid #dedede !important;
+	-webkit-border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	border-radius: 3px !important;
+	padding: 0 10px !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+#social input.social-input,  
+#social .social-select {
+	width: 100% !important;
+	height: 46px !important;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;
+}
+
+#social textarea.social-input {
+	padding-top: 20px;
+	width: 61.8%;
+}
+
+#social .form-submit {
+	padding-left: 0px !important;
+	height: 46px !important;
+}
+
+#social input#submit {
+	width: 38.19%;
+	padding-left: 0px !important;
+	display: block;
+	background: none !important;
+	background-color: #dedede !important;
+	color: #555 !important;
+
+	font: 16px sans-serif !important;
+	color: #555 !important;
+
+	border: none !important;
+
+	-webkit-border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	border-radius: 3px !important;
+
+	height: 46px !important;
+	position: relative !important;
+	text-align: center !important;
+
+	text-shadow: none !important;
+
+	/*Transition*/ 
+	-webkit-transition: All 0.5s ease; 
+	-moz-transition: All 0.5s ease; 
+	-o-transition: All 0.5s ease; 
+	-ms-transition: All 0.5s ease; 
+	transition: All 0.5s ease;
+}
+
+	#social input#submit:hover,
+	#social input#submit:active,
+	#social input#submit:focus {
+		background-color: #a7a7a7 !important;
+		color: #efefef !important;
+		border: none !important;
+	}
+
+#social .social-identity {
+	margin-top: 0px !important;
+	margin-bottom: 33px !important;
+}
+
+.logged-in #social .social-identity .social-input-row {
+	padding-left: 50px !important;
+}
+
+#social .social-nav {
+	background: none !important;
+}
+
+#social .social-nav li a {
+	text-decoration: none;
+}
+
+#social .social-nav .social-current-tab {
+	background: #DEDEDE !important;
+
+	-webkit-border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	border-radius: 3px !important;
+}
+
+#social .social-nav .social-current-tab a {
+	background: none !important;
+	text-decoration: none !important;
+}
+
+#social .social-replied,
+#social .social-pingback {
+	display: none !important;
 }
 
 /* Social Media Buttons Sidebar
@@ -161,6 +592,7 @@ Version: 1.0
 		-webkit-transition: margin 0.3s ease-out;
 	    -moz-transition: margin 0.3s ease-out;
 	    -o-transition: margin 0.3s ease-out;
+	    transition: margin 0.3s ease-out;
 	}
 		.social-media li:hover {
 			margin-top: 0px;
@@ -195,22 +627,192 @@ Version: 1.0
 	background: url('img/sprites.png') no-repeat -290px -9px;
 }
 
+/* Contact Form 7
+-------------------------------------------------------------- */
+
+.wpcf7 p {
+	margin-bottom: 0;
+}
+
+.wpcf7 .ajax-loader {
+	display: none;
+}
+
+/* CF7 Buttons */
+.wpcf7-submit,
+#news #contact-button {
+	width: 100%;
+	display: block;
+	border: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	height: 46px;
+	position: relative;
+	text-align: center;
+	line-height: 46px;
+}
+
+.wpcf7-submit,
+#news #contact-button {
+	background-color: #dedede;
+	color: #555;
+
+	/*Transition*/ 
+	-webkit-transition: All 0.5s ease; 
+	-moz-transition: All 0.5s ease; 
+	-o-transition: All 0.5s ease; 
+	-ms-transition: All 0.5s ease; 
+	transition: All 0.5s ease;
+}
+
+	.wpcf7-submit:hover,
+	.wpcf7-submit:focus,
+	.wpcf7-submit:active,
+	#news #contact-button:hover,
+	#news #contact-button:focus,
+	#news #contact-button:active {
+		background-color: #a7a7a7;
+		color: #efefef;
+	}
+
+#news #contact-button {
+	width: auto;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/* CF7 Text Fields */
+.wpcf7-text,
+.wpcf7-response-output,
+.wpcf7-not-valid-tip {
+		width: 100% !important; 
+		display: inline-block;
+		text-decoration: none;
+		color: #555;
+		border: 1px solid #dedede;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		padding: 0 10px;
+		-webkit-box-sizing: border-box; 
+		-moz-box-sizing: border-box;    
+		box-sizing: border-box;         
+	}
+
+.wpcf7-text {
+	height: 46px;
+}
+
+	.ie7 .wpcf7-text { /* IE7 */
+		width: 266px !important; /* Needs to be adjusted depending on sidebar width */
+		height: auto;
+		padding: 0 !important;
+	}
+
+	.ie8 .wpcf7-text { /* IE8 */
+		height: auto; 
+	}
+
+.wpcf7-not-valid-tip {
+	margin-top: 5px;
+	padding: 0 5px !important;
+}
+
+.wpcf7-not-valid-tip {
+	background: #FF9494 !important;
+	color: white;
+	border: none !important;
+	position: static !important;
+}
+
+	.ie7 .wpcf7-not-valid-tip { /* IE7 */
+		width: 266px !important; /* Needs to be adjusted depending on sidebar width */
+		padding: 0 !important;
+	}
+
+.wpcf7-response-output {
+	border: none !important;
+	margin: 15px 0 0 !important;
+	margin-top: 15px;
+}
+
+.wpcf7-mail-sent-ok {
+	background: #c5e6b1;
+	color: white;
+}
+
+.wpcf7-mail-sent-ng {
+	background: #FF9494;
+	color: white;
+}
+
+.wpcf7-spam-blocked {
+	background: #FEC993;
+	color: white;
+}
+
+.wpcf7-validation-errors {
+	background: #FF9494;
+	color: white;
+}
+
+#news .wpcf7-submit {
+	margin-top: 15px;
+}
+
+/* MailChimp Sign-Up
+-------------------------------------------------------------- */
+
+#mc-sign-up .wpcf7-validation-errors {
+	display: none !important;
+}
+
+
+#news #mc-sign-up-button {
+	background-color: #f4802d;
+	color: #efefef;
+}
+
+	#news #mc-sign-up-button:hover,
+	#news #mc-sign-up-button:active, 
+	#news #mc-sign-up-button:focus {
+		background-color: #5C963A;
+	}
+
 /* Twitter
 -------------------------------------------------------------- */
-.tweet {
+#news .tweet {
 	width:100%;
 	margin: 0;
 }
 
-	.tweet_list {
+	#news .tweet_list {
 		list-style: none !important;
 		padding-left: 0 !important;
 	}
 
-		.tweet_list .tweet_avatar {
+	#news .tweet_list li {
+		border-bottom: 1px solid #dedede;
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+	}
+
+		#news .tweet_list li:last-child {
+			border-bottom: none;
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+
+	#news .tweet_list li img {
+		max-width: 48px;
+	}
+
+		#news .tweet_list .tweet_avatar {
 			float: left;
 			margin-right: 10px;
 		}
+
 
 /* Print styles!
 -------------------------------------------------------------------------------*/
