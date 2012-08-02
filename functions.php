@@ -108,4 +108,15 @@
 	}
 	add_filter( 'get_the_excerpt', 'cl_custom_excerpt_more' );
 
+	// adds post thumbnails to RSS feed
+	function add_thumb_to_RSS($content) {
+	   global $post;
+	   if ( has_post_thumbnail( $post->ID ) ){
+	      $content = '' . get_the_post_thumbnail( $post->ID, 'thumbnail' ) . '' . $content;
+	   }
+	   return $content;
+	}
+	add_filter('the_excerpt_rss', 'add_thumb_to_RSS');
+	add_filter('the_content_feed', 'add_thumb_to_RSS');
+
 ?>
