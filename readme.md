@@ -17,6 +17,7 @@ Stripped down WordPress theme based on HTML5 Reset Theme (http://html5reset.org/
 - Hardcoded Tweets with Tweet! Javascript (http://tweet.seaofclouds.com/)
                                                                         
 ## Customization:
+- Contact Form 7 <a href="https://github.com/ContentLEAD/ContentLead-WP-Theme/wiki/Contact-Form-7">How to</a>
 - MailChimp Sign Up Form (<a href="https://github.com/ContentLEAD/ContentLead-WP-Theme/wiki/MailChimp-Newsletter-Sign-Up-Form">How To</a>)
 - Like Box (change iframe in sidebar.php on line 31 and set to appropiate width; standard = 295px)
 - Twitter (change username in footer.php on line 21)
