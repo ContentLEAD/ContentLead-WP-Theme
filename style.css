@@ -188,6 +188,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 	width: 1000px;
 	margin: 30px auto;
 	font: 16px sans-serif;
+	overflow: auto;
 }
 
 #news p {
