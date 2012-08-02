@@ -17,7 +17,7 @@ Stripped down WordPress theme based on HTML5 Reset Theme (http://html5reset.org/
 - Hardcoded Tweets with Tweet! Javascript (http://tweet.seaofclouds.com/)
                                                                         
 ## Customization:
-- MailChimp (https://github.com/ContentLEAD/ContentLead-WP-Theme/wiki/MailChimp-Newsletter-Sign-Up-Form)
+- <a href="https://github.com/ContentLEAD/ContentLead-WP-Theme/wiki/MailChimp-Newsletter-Sign-Up-Form">MailChimp Sign Up Form</a>
 - Like Box (change iframe in sidebar.php on line 31 and set to appropiate width; standard = 295px)
 - Twitter (change username in footer.php on line 21)
 - Nr. of posts in latest news (index.php line 9 $latest_news_show)
