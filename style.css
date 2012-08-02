@@ -261,7 +261,8 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 }
 
 #primary,
-.single article {
+.single #news article,
+.page #news article {
 	width: 64.3%;
 	float: left;
 	margin-right: 30px;
@@ -302,6 +303,8 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .widget,
 .single .entry-header,
 .single .entry-content,
+.page .entry-header,
+.page .entry-content,
 .category article,
 .archive article,
 .page-title,
@@ -370,7 +373,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 #news #contact-button,
 .page-title,
 .single .entry-header,
-.single .entry-header {
+.page .entry-header {
 	margin-bottom: 30px;
 }
 
@@ -634,6 +637,15 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 	margin-bottom: 0;
 }
 
+.wpcf7 label {
+	position: absolute;
+	left: -9999px;
+}
+
+.wpcf7 br {
+	line-height: 100%;
+}
+
 .wpcf7 .ajax-loader {
 	display: none;
 }
@@ -684,6 +696,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 
 /* CF7 Text Fields */
 .wpcf7-text,
+.wpcf7-textarea,
 .wpcf7-response-output,
 .wpcf7-not-valid-tip {
 		width: 100% !important; 
@@ -705,7 +718,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 }
 
 	.ie7 .wpcf7-text { /* IE7 */
-		width: 266px !important; /* Needs to be adjusted depending on sidebar width */
+		width: 286px !important; /* Needs to be adjusted depending on sidebar width */
 		height: auto;
 		padding: 0 !important;
 	}
@@ -713,6 +726,20 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 	.ie8 .wpcf7-text { /* IE8 */
 		height: auto; 
 	}
+
+.wpcf7-textarea {
+	height: 138px;
+}
+
+	.ie7 .wpcf7-textarea { /* IE7 */
+		width: 266px !important; /* Needs to be adjusted depending on sidebar width */
+	}
+
+#news .wpcf7-text,
+#news .wpcf7-textarea {
+	margin-top: 15px;
+}
+
 
 .wpcf7-not-valid-tip {
 	margin-top: 5px;
@@ -757,8 +784,12 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 	color: white;
 }
 
-#news .wpcf7-submit {
-	margin-top: 15px;
+#news .wpcf7-textarea {
+	margin-bottom: 10px;
+}
+
+#mc-sign-up-email {
+	margin-bottom: 15px !important;
 }
 
 /* MailChimp Sign-Up

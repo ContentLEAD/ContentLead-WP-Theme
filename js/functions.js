@@ -47,6 +47,10 @@ $(document).ready(function (){
 		$('#cf7-contact-us-message').attr('placeholder', 'Your Message for Us');
 	}
 
+	// Removes undesired <br> tag in contact and newsletter sign up form
+	$('#cf7-contact-us').find("br").remove();
+	$('#mc-sign-up').find("br").remove();
+
 	/* Adds placeholders to "Mailchimp Sign Up" form
 	 */
 	 if ( $('#mc-sign-up-email').length > 0 ) { 

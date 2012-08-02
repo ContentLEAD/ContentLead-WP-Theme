@@ -11,8 +11,15 @@
         </ul>
     </aside>
 
-    <!-- Contact Us Button -->
-    <a id="contact-button" href="#"><i class="icon-phone"></i> Contact Us</a>
+    <!-- Contact Us Button
+    <a id="contact-button" href="#"><i class="icon-phone"></i> Contact Us</a> -->
+
+    <!-- Begin Contact Us Form-->
+    <aside id="cf7-contact-us" class="widget">
+        <h2 class="widget-title">Contact Us</h2>
+        <p>Any questions. We are glad to answer them. Just send us a quick message!</p><br>
+        <?php echo do_shortcode( '[contact-form-7 id="610" title="Contact Us"]' ); ?>
+    </aside> <!--End Contact Us Form -->
 
     <!-- Begin MailChimp Signup Form-->
     <aside id="mc-sign-up" class="widget">
