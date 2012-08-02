@@ -685,7 +685,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 	#news #contact-button:focus,
 	#news #contact-button:active {
 		background-color: #a7a7a7;
-		color: #efefef;
+		color: #efefef !important;
 	}
 
 #news #contact-button {
