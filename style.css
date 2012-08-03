@@ -703,7 +703,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .wpcf7-text,
 .wpcf7-textarea,
 .wpcf7-response-output,
-.wpcf7-not-valid-tip {
+.wpcf7-not-valid-tip, {
 		width: 100% !important; 
 		display: inline-block;
 		text-decoration: none;
@@ -746,14 +746,16 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 }
 
 
-.wpcf7-not-valid-tip {
+.wpcf7-not-valid-tip,
+.wpcf7-not-valid-tip-no-ajax {
 	margin-top: 5px;
 	padding: 0 5px !important;
 }
 
-.wpcf7-not-valid-tip {
+.wpcf7-not-valid-tip,
+.wpcf7-not-valid-tip-no-ajax {
 	background: #FF9494 !important;
-	color: white;
+	color: white !important;
 	border: none !important;
 	position: static !important;
 }
