@@ -421,6 +421,10 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 		margin-bottom: 0;
 	}
 
+#news .widget_categories .cat-item-1 {
+	display: none;
+}
+
 .error404 #news .widget {
 	width: 28%;
 	margin-right: 15px;
