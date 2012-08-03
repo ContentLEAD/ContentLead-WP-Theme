@@ -66,13 +66,13 @@
 	}
 	
 	/**
-	 * Sets the post excerpt length to 40 words.
+	 * Sets the post excerpt length to 25 words.
 	 *
 	 * To override this length in a child theme, remove the filter and add your own
 	 * function tied to the excerpt_length filter hook.
 	 */
 	function cl_excerpt_length( $length ) {
-		return 40;
+		return 25;
 	}
 	add_filter( 'excerpt_length', 'cl_excerpt_length' );
 
