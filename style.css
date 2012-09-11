@@ -703,7 +703,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .wpcf7-text,
 .wpcf7-textarea,
 .wpcf7-response-output,
-.wpcf7-not-valid-tip, {
+.wpcf7-not-valid-tip {
 		width: 100% !important; 
 		display: inline-block;
 		text-decoration: none;
