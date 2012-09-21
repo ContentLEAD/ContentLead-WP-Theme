@@ -580,37 +580,30 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 
 /* Social Media Buttons Sidebar
 -------------------------------------------------------------------------------*/
-.social-media {
-	width: 100%;
-	height: 46px;
-	margin-bottom: 45px;
+.social-media ul {
+	text-align: center;
 }
 
-	.social-media ul {
-		width: 300px; /* change width to achieve centering */
-		margin: 0 auto;
+.social-media li {
+	display: inline-block;
+	padding-right: 3px;
+	height: 46px;
+	margin-top: 15px;
+
+}
+	.social-media li:hover {
+		margin-top: 0px;
 	}
 
-	.social-media li {
-		width: 46px;
-		padding-right: 4px;
-		float: left;
-		margin-top: 15px;
+.social-media a {
+	width: 46px;
+	height: 46px;
+    display: inline-block;
+}
 
-		/* Icon Bump Up Effect */
-		-webkit-transition: margin 0.3s ease-out;
-	    -moz-transition: margin 0.3s ease-out;
-	    -o-transition: margin 0.3s ease-out;
-	    transition: margin 0.3s ease-out;
-	}
-		.social-media li:hover {
-			margin-top: 0px;
-		}
-
-	.social-media a {
-		height: 46px;
-	    display: block;
-	}
+.social-media li a:hover {
+		margin-top: 0px;
+}
 
 .social-media #facebook {
 	background: url('img/sprites.png') no-repeat -9px -9px;
