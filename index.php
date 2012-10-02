@@ -34,19 +34,17 @@
 			
 			<?php $categories = get_categories();
 				$category_post_show = 2; // How many posts should be displayed in each category?
+			?>
+				<!-- Start #news-categories -->
+				<ul id="news-categories">
 
-				// HACK - Counter for two-column layout...Cleaner CSS solution anyone?!
-				$cat_count_half = round(count($categories)*.5);			
-				$counter = 1; 
-				?>
-				
-				<div class="left-col">
 				<!-- Start #news-category -->
 				<?php foreach($categories as $category) : 
 					
 					$news_cat_query = new WP_Query(array('cat' => $category->cat_ID, 'post__not_in' => $latest_news_post_ids, 'posts_per_page' => $category_post_show));
 						if ($news_cat_query->have_posts()) : ?>
-							<section class="news-category" id="category-<?php echo $category->cat_ID; ?>">
+
+							<li class="news-category" id="category-<?php echo $category->cat_ID; ?>">
 								<h3 class="category-title"><a href="<?php echo get_category_link($category->cat_ID)?>" title="Category <?php echo $category->cat_name; ?>"><?php echo $category->cat_name; ?></a></h3> 
 									<?php while ($news_cat_query->have_posts()) : $news_cat_query->the_post(); ?>					 
 										<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -68,18 +66,13 @@
 										</article><!-- #post-<?php the_ID(); ?> -->
 									<?php endwhile;  // Reset Post Data ?>
 
-							</section>
-
-
-							<?php if ($counter == $cat_count_half) : ?> 
-						  		</div> <!-- End .left-col -->
-						  		<div class="right-col">
-						  <?php endif; $counter++; ?>
+							</li>
 
 						<?php endif; ?>
 								
 				<?php endforeach; ?><!-- End #news-category -->
-			</div><!-- End .right-col -->
+
+				<ul><!-- End #news-categories -->
 
 
 			<?php else : ?> <!-- No Articles -->
