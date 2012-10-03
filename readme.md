@@ -7,12 +7,9 @@ Stripped down WordPress theme based on HTML5 Reset Theme (http://html5reset.org/
 ## Special Features:
 
 - All areas and images are designed using a simple "Golden Ratio" layout (http://en.wikipedia.org/wiki/Golden_ratio)
-- 2 style sheets: style.css is completely stripped for usage with client's style sheets. simple.css (imported by style.css) adds some basic styling to the theme.
 - Pagination for archives and categories instead of "Next Posts" and "Previous Posts"
 - Sprite sheet for social media icons
-- CSS3 transition for simple social media icon "bump up" effect
 - AJAX contact form and newsletter sign-up
-- Icon Font Implementation (http://fortawesome.github.com/Font-Awesome/, only for contact button so far)
 - Hardcoded Facebook Like box 
 - Hardcoded Tweets with Tweet! Javascript (http://tweet.seaofclouds.com/)
                                                                         
@@ -37,11 +34,10 @@ Stripped down WordPress theme based on HTML5 Reset Theme (http://html5reset.org/
 - use "Regenerate Thumbnails" plugin (http://wordpress.org/extend/plugins/regenerate-thumbnails/) to resize thumnails to custom sizes if needed 
 
 ## To Be Done:
-- Custom Post Type for Product
-- Preview Newsletter
 - Date Icon & Ribbon
+- Adjust html for post images (figure & caption tags)
+- use sharrre javascript instead of AddThis social sharing
 - Icons for contact form & newsletter input fields
-- FeedBurner Inegration
 - Add Admin section for theme on backend of WordPress
 - Latest News slider
 - Design/Implement different selectable layouts for index.php
