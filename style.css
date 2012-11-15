@@ -288,6 +288,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 
 	#news .news-category:nth-child(even) {
 		float: right;
+		clear:right;
 	}
 
 #news .news-category:after {
