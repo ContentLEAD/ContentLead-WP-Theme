@@ -2,8 +2,6 @@
 			<!-- CLIENT FOOTER HTML CODE GOES HERE -->
 		</footer>
 
-	</div>
-
 	<?php wp_footer(); ?>
 
 <!-- here comes the javascript -->
