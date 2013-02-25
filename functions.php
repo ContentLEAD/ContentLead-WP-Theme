@@ -112,7 +112,7 @@
 	function add_thumb_to_RSS($content) {
 	   global $post;
 	   if ( has_post_thumbnail( $post->ID ) ){
-	      $content = '' . get_the_post_thumbnail( $post->ID, 'latest-news-thumb', array( 'alt' => get_the_title(), 'style' => 'float:left; margin-right:1em;') ) . '' . $content;
+	      $content = '' . get_the_post_thumbnail( $post->ID, 'thumbnail', array( 'class' => 'latest-news-thumb', 'alt' => get_the_title(), 'style' => 'float:left; margin-right:1em;') ) . '' . $content;
 	   }
 	   return $content;
 	}
