@@ -72,7 +72,7 @@
 								
 				<?php endforeach; ?><!-- End #news-category -->
 
-				<ul><!-- End #news-categories -->
+				</ul><!-- End #news-categories -->
 
 
 			<?php else : ?> <!-- No Articles -->
