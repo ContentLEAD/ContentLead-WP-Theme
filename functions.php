@@ -118,5 +118,14 @@
 	}
 	add_filter('the_excerpt_rss', 'add_thumb_to_RSS');
 	add_filter('the_content_feed', 'add_thumb_to_RSS');
-
+	
+	function override_feed_404() {
+		global $wp_query;
+		
+		if (is_feed()) {
+			status_header( 200 );
+			$wp_query->is_404 = false;
+		}
+	}
+	add_filter('template_redirect', 'override_feed_404' );
 ?>
