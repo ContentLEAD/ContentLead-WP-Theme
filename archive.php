@@ -28,7 +28,7 @@
 					<h1 class="page-title">News Archives</h1>
 				
 				<?php } ?>
-				<?php query_posts($query_string . '&posts_per_page=8'); ?>
+				<?php query_posts($query_string); ?>
 				<?php while (have_posts()) : the_post(); ?>
 			
 				<article id="post-<?php the_ID(); ?>" <?php post_class() ?>>
