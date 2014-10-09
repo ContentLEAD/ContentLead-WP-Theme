@@ -130,4 +130,3 @@ function load_javascript_dependencies() {
 		}
 	}
 	add_filter('template_redirect', 'override_feed_404' );
-?>
