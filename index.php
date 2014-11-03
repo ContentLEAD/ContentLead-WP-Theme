@@ -46,7 +46,8 @@
 
 							<li class="news-category" id="category-<?php echo $category->cat_ID; ?>">
 								<h3 class="category-title"><a href="<?php echo get_category_link($category->cat_ID)?>" title="Category <?php echo $category->cat_name; ?>"><?php echo $category->cat_name; ?></a></h3> 
-									<?php while ($news_cat_query->have_posts()) : $news_cat_query->the_post(); ?>					 
+									<?php while ($news_cat_query->have_posts()) : $news_cat_query->the_post(); ?>
+										<?php array_push($latest_news_post_ids, $post->ID); ?>					 
 										<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 											<header class="entry-header">
 												<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_post_thumbnail('news-category-thumb'); ?></a>
