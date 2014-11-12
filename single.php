@@ -23,9 +23,14 @@
 					<span class='st_pinterest_hcount' displayText='Pinterest'></span>
 				</div>
 					
-				<div class="figure"><?php echo get_the_post_thumbnail(get_the_ID(), 'news-category-thumb'); ?>
-					<p class="caption"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>	
-				</div>
+				<!--video embed code-->
+
+				<?php if (!get_post_meta( get_the_ID(), 'brafton_video', true )): ?>
+					<div class="figure"><?php echo get_the_post_thumbnail(get_the_ID(), 'news-category-thumb'); ?>	
+					</div>
+				<?php else: ?>
+                 			<?php echo get_post_meta( get_the_ID(), 'brafton_video', true ) ?>
+				<?php endif; ?>
 					
 				<?php the_content(); ?>
 
