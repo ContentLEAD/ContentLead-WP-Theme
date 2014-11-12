@@ -1,30 +1,13 @@
 /*   
-Theme Name: Sawwwawssss presentation
+Theme Name: Content Lead SASS theme
 Description: Style-free theme to pull style sheets from clients
 Author: ContentLEAD
 Author URI: http://contentlead.com
 Version: 1.0
 */
 
-/*
-	HTML5 Reset Wordpress Theme :: style.css
-	----------------------------------------------------------
-	We have learned much from/been inspired by/taken code where offered from:
-	
-	Eric Meyer					:: http://ericmeyer.com
-	HTML5 Doctor				:: http://html5doctor.com
-	and the HTML5 Boilerplate	:: http://html5boilerplate.com
-	
-	Special thanks: The Wordpress theme owes its start to an empty theme authored 
-		by Chris Coyier & Jeff Starr: http://digwp.com
-	
--------------------------------------------------------------------------------*/
 
-/* News section default
--------------------------------------------------------------------------------*/
-
-
-/*Options======================================
+/*Here are your options======================================
 ===============================================*/
 
 /*Main Colors*/
@@ -59,9 +42,9 @@ $border-color: black;
 $border-thickness: 0px; /*use 0px for no border*/
 
 
-/*Options- Select 1 for "yes" and 0 for "no"...
+/*Do you need the following?
 
-Do you need the following?*/
+Select 1 for "yes" and 0 for "no"...*/
 
 $social-media-buttons-sidebar: 0;
 
