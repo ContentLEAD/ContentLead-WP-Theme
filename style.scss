@@ -79,16 +79,6 @@ body {
 	background-color: $body-background-color; 
 }
 
-#news {
-	width: $news-width;
-	margin: 30px auto;
-	font-size: $font-size; 
-	font-family: $font-family;
-	overflow: $news-overflow;
-	color: $font-color;
-	background-color: $news-background-color;
-}
-
 #news::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
 #news::selection {background: #fcd700; color: #fff; text-shadow: none;} 
 
@@ -103,6 +93,14 @@ body {
 /*Nest everything in "news" id*/
 
 #news {	
+	
+	width: $news-width;
+	margin: 30px auto;
+	font-size: $font-size; 
+	font-family: $font-family;
+	overflow: $news-overflow;
+	color: $font-color;
+	background-color: $news-background-color;
 
 
 	object,iframe,h1,h2,h3,h4,h5,h6,p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
@@ -226,11 +224,10 @@ body {
 	a {
 		color: $link-color;
 		text-decoration: $link-decoration;
-	}
-
-	a:hover {
-		color: $link-hover-color;
-		text-decoration: $link-hover-decoration;
+		&:hover {
+			color: $link-hover-color;
+			text-decoration: $link-hover-decoration;
+		}
 	}
 
 	h1 {
@@ -307,14 +304,14 @@ body {
 		box-sizing: border-box;         /* Opera/IE 8+ */
 	}
 
-		.news-category:nth-child(odd) {
-			clear: left;
-		}
+	.news-category:nth-child(odd) {
+		clear: left;
+	}
 
-		.news-category:nth-child(even) {
-			float: right;
-			clear:right;
-		}
+	.news-category:nth-child(even) {
+		float: right;
+		clear:right;
+	}
 
 	.news-category:after {
 	  content: "";
@@ -329,14 +326,14 @@ body {
 		padding-bottom: 15px;
 	}
 
-		.news-category .category-title {
-			margin-bottom: 15px;
-			font-size: 1.5em;
-		}
+	.news-category .category-title {
+		margin-bottom: 15px;
+		font-size: 1.5em;
+	}
 
-		.news-category .entry-title {
-			font-size: 1.25em;
-		}
+	.news-category .entry-title {
+		font-size: 1.25em;
+	}
 
 	#sidebar {
 		width: 32%;
@@ -391,19 +388,19 @@ body {
 		border-bottom: $border-thickness solid $border-color;
 	}
 
-		#latest-news article .entry-header,
-		.news-category article .entry-header,
-		.archive article .entry-header  {
-			margin-bottom: 10px;
-		}
+	#latest-news article .entry-header,
+	.news-category article .entry-header,
+	.archive article .entry-header  {
+		margin-bottom: 10px;
+	}
 
-			.news-category article .entry-header img{
-			margin-bottom: 15px;
-		}
+		.news-category article .entry-header img{
+		margin-bottom: 15px;
+	}
 
-		.news-category article p {
-			margin-bottom: 0;
-		}
+	.news-category article p {
+		margin-bottom: 0;
+	}
 
 	#latest-news p,
 	.news-category p,
@@ -421,19 +418,19 @@ body {
 		margin-bottom: 30px;
 	}
 
-		.figure:empty {
-			display: none;
-		}
+	.figure:empty {
+		display: none;
+	}
 
-		.figure .caption { /* Styling macthes Facebook Comments Box */
-			padding: 0 15px;
-			margin-bottom: 0 !important;
-			color: gray;
-			font-size: 11px !important;
-			font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
-			font-style: italic;
-			line-height: 1.28;
-		}
+	.figure .caption { /* Styling macthes Facebook Comments Box */
+		padding: 0 15px;
+		margin-bottom: 0 !important;
+		color: gray;
+		font-size: 11px !important;
+		font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+		font-style: italic;
+		line-height: 1.28;
+	}
 
 	.archive article,
 	.catgory article,
@@ -444,26 +441,27 @@ body {
 	.navigation {
 		text-align: center;
 	}
-		.navigation:empty {
-			display: none;
-		}
+	
+	.navigation:empty {
+		display: none;
+	}
 
 	.widget {
 		clear: both;
+		
+		ul {
+			list-style: circle;
+			padding-left: 1.5em;
+		}
+		
+		p {
+			margin-bottom: 0;
+		}
 	}
 
 	.widget-title {
 		margin-bottom: 15px;
 	}
-
-		.widget ul {
-			list-style: circle;
-			padding-left: 1.5em;
-		}
-
-		.widget p {
-			margin-bottom: 0;
-		}
 
 	.widget_categories .cat-item-1 {
 		display: none;
@@ -479,11 +477,6 @@ body {
 	#footer {
 		clear: both;
 	}
-
-
-
-
-
 
 }/*end #news nest
 
@@ -501,14 +494,12 @@ body {
 
 /* Comment Plugin (http://mailchimp.com/social-plugin-for-wordpress/)
 -------------------------------------------------------------------------------*/
-#social {
-	margin: 30px 0 !important;
-}
 
 /*Nest everything in "social" class*/
 
 #social {
-
+	margin: 30px 0 !important;
+	
 	 #reply-title,
 	 .social-help,
 	 .social-last-reply-when,
@@ -593,13 +584,13 @@ body {
 		transition: All 0.5s ease;
 	}
 
-		 input#submit:hover,
-		 input#submit:active,
-		 input#submit:focus {
-			background-color: #a7a7a7 !important;
-			color: #efefef !important;
-			border: none !important;
-		}
+	 input#submit:hover,
+	 input#submit:active,
+	 input#submit:focus {
+		background-color: #a7a7a7 !important;
+		color: #efefef !important;
+		border: none !important;
+	}
 
 	 .social-identity {
 		margin-top: 0px !important;
@@ -612,30 +603,31 @@ body {
 
 	 .social-nav {
 		background: none !important;
+		
+		li a {
+			text-decoration: none;
+		}
+		
+		.social-current-tab {
+			background: #DEDEDE !important;
+	
+			-webkit-border-radius: 3px !important;
+			-moz-border-radius: 3px !important;
+			border-radius: 3px !important;
+			
+				a {
+				background: none !important;
+				text-decoration: none !important;
+			}
+		}
 	}
 
-	 .social-nav li a {
-		text-decoration: none;
-	}
-
-	 .social-nav .social-current-tab {
-		background: #DEDEDE !important;
-
-		-webkit-border-radius: 3px !important;
-		-moz-border-radius: 3px !important;
-		border-radius: 3px !important;
-	}
-
-	 .social-nav .social-current-tab a {
-		background: none !important;
-		text-decoration: none !important;
-	}
 
 	 .social-replied,
 	 .social-pingback {
-		display: none !important;
-	}
-  }/*end #social nest*/
+			display: none !important;
+		}
+  	}/*end #social nest*/
 } /*end mailchimp if statement*/
 
 @if $social-media-buttons-sidebar == 1 {
@@ -663,11 +655,12 @@ body {
 		width: 46px;
 		height: 46px;
 	    display: inline-block;
+	    
+	    &:hover {
+	    	margin-top: 0px;
+	    }
 	}
 
-	li a:hover {
-			margin-top: 0px;
-	}
 
 	#facebook {
 		background: url('img/sprites.png') no-repeat -9px -9px;
@@ -841,15 +834,15 @@ body {
 	height: 46px;
 }
 
-	.ie7 .wpcf7-text { /* IE7 */
-		width: 286px !important; /* Needs to be adjusted depending on sidebar width */
-		height: auto;
-		padding: 0 !important;
-	}
+.ie7 .wpcf7-text { /* IE7 */
+	width: 286px !important; /* Needs to be adjusted depending on sidebar width */
+	height: auto;
+	padding: 0 !important;
+}
 
-	.ie8 .wpcf7-text { /* IE8 */
-		height: auto; 
-	}
+.ie8 .wpcf7-text { /* IE8 */
+	height: auto; 
+}
 
 .wpcf7-textarea {
 	height: 138px;
@@ -879,10 +872,10 @@ body {
 	position: static !important;
 }
 
-	.ie7 .wpcf7-not-valid-tip { /* IE7 */
-		width: 266px !important; /* Needs to be adjusted depending on sidebar width */
-		padding: 0 !important;
-	}
+.ie7 .wpcf7-not-valid-tip { /* IE7 */
+	width: 266px !important; /* Needs to be adjusted depending on sidebar width */
+	padding: 0 !important;
+}
 
 .wpcf7-response-output {
 	border: none !important;
@@ -935,11 +928,12 @@ body {
 	color: #efefef;
 }
 
-	#mc-sign-up-button:hover,
-	#mc-sign-up-button:active, 
-	#mc-sign-up-button:focus {
-		background-color: #5C963A;
-	}
+#mc-sign-up-button:hover,
+#mc-sign-up-button:active, 
+#mc-sign-up-button:focus {
+	background-color: #5C963A;
+}
+
 } /*end mailchimp sign up if statement*/
 
 @if $twitter == 1 {
@@ -951,32 +945,31 @@ body {
 	margin: 0;
 }
 
-	.tweet_list {
-		list-style: none !important;
-		padding-left: 0 !important;
-	}
-
-	.tweet_list li {
+.tweet_list {
+	list-style: none !important;
+	padding-left: 0 !important;
+	 li {
 		border-bottom: $border-thickness solid $border-color;
 		padding-bottom: 15px;
 		margin-bottom: 15px;
+		
+		img {
+			max-width: 48px;
+		}
 	}
 
-		.tweet_list li:last-child {
-			border-bottom: none;
-			padding-bottom: 0;
-			margin-bottom: 0;
-		}
-
-	.tweet_list li img {
-		max-width: 48px;
+	&:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 0;
 	}
 
-		.tweet_list .tweet_avatar {
-			float: left;
-			margin-right: 10px;
-		}
 
+	.tweet_avatar {
+		float: left;
+		margin-right: 10px;
+	}
+}
 } /*end twitter if statement*/
 
 
