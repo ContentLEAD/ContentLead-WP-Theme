@@ -10,7 +10,7 @@
 	// Add RSS links to <head> section
 	add_theme_support( 'automatic-feed-links' );
 
-add_action('admin_enqueue_scripts', 'load-javascript_dependencies'  ); 
+add_action('admin_enqueue_scripts', 'load_javascript_dependencies'  ); 
 function load_javascript_dependencies() {
 	// Load jQuery
 	if ( !function_exists( 'core_mods' ) ) {
