@@ -1,4 +1,4 @@
-/*   
+/*
 Theme Name: Content Lead SASS theme
 Description: Style-free theme to pull style sheets from clients
 Author: ContentLEAD
@@ -16,7 +16,7 @@ Version: 1.0
 
 /*Main Colors*/
 
-$body-background-color: #000; 
+$body-background-color: #000;
 $news-background-color: pink;
 
 /*Sizing--*/
@@ -38,7 +38,7 @@ $link-color: #000;
 $link-decoration: none;
 
 $link-hover-color: $link-color;
-$link-hover-decoration: underline; 
+$link-hover-decoration: underline;
 
 /*Borders*/
 
@@ -75,12 +75,15 @@ $media-queries: 0;
 /*And the css...======================
 ==================================*/
 
+
+
+
 body {
-	background-color: $body-background-color; 
+	background-color: $body-background-color;
 }
 
 #news::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
-#news::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+#news::selection {background: #fcd700; color: #fff; text-shadow: none;}
 
 .single #news article,
 .page #news article {
@@ -92,11 +95,11 @@ body {
 
 /*Nest everything in "news" id*/
 
-#news {	
-	
+#news {
+
 	width: $news-width;
 	margin: 30px auto;
-	font-size: $font-size; 
+	font-size: $font-size;
 	font-family: $font-family;
 	overflow: $news-overflow;
 	color: $font-color;
@@ -111,12 +114,12 @@ body {
 		font-size: 100%;
 		vertical-align: baseline;
 		background: transparent;
-	}								
+	}
 
 	article, aside, figure, footer, header, hgroup, nav, section {display: block;}
 
 	/* Responsive images and other embedded objects
-	   Note: keeping IMG here will cause problems if you're using foreground images as sprites, like, say for Google Maps custom placemarkers. 
+	   Note: keeping IMG here will cause problems if you're using foreground images as sprites, like, say for Google Maps custom placemarkers.
 	   There has been a report of problems with standard Google maps as well, but we haven't been able to duplicate or diagnose the issue. */
 	img,
 	object,
@@ -125,15 +128,15 @@ body {
 	/* force a vertical scrollbar to prevent a jumpy page
 	html {overflow-y: scroll;}
 
-	/* we use a lot of ULs that aren't bulleted. 
+	/* we use a lot of ULs that aren't bulleted.
 		don't forget to restore the bullets within content. */
 	ul {list-style: none;}
 
 	blockquote, q {quotes: none;}
 
-	blockquote:before, 
-	blockquote:after, 
-	q:before, 
+	blockquote:before,
+	blockquote:after,
+	q:before,
 	q:after {content: ''; content: none;}
 
 	a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
@@ -165,7 +168,7 @@ body {
 	select, input, textarea {font: 99% sans-serif;}
 
 	table {font-size: inherit; font: 100%;}
-	 
+
 	/* Accessible focus treatment
 		people.opera.com/patrickl/experiments/keyboard/test */
 	a:hover, a:active {outline: none;}
@@ -174,7 +177,7 @@ body {
 
 	strong, th {font-weight: bold;}
 
-	td, td img {vertical-align: top;} 
+	td, td img {vertical-align: top;}
 
 	/* Make sure sup and sub don't screw with your line-heights
 		gist.github.com/413930 */
@@ -187,9 +190,9 @@ body {
 
 	/* hand cursor on clickable elements */
 	.clickable,
-	label, 
-	input[type=button], 
-	input[type=submit], 
+	label,
+	input[type=button],
+	input[type=submit],
 	button {cursor: pointer;}
 
 	/* Webkit browsers add a 2px margin outside the chrome of form elements */
@@ -197,7 +200,7 @@ body {
 
 	/* make buttons play nice in IE */
 	button {width: auto; overflow: visible;}
-	 
+
 	/* scale images in IE7 more attractively */
 	.ie7 img {-ms-interpolation-mode: bicubic;}
 
@@ -205,8 +208,8 @@ body {
 	.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
 
 	/* let's clear some floats */
-	.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
-	.clearfix:after { clear: both; }  
+	.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+	.clearfix:after { clear: both; }
 	.clearfix { zoom: 1; }
 
 
@@ -268,7 +271,7 @@ body {
 
 
 	/* j.mp/webkit-tap-highlight-color */
-	a:link {-webkit-tap-highlight-color: #fcd700;} 
+	a:link {-webkit-tap-highlight-color: #fcd700;}
 
 	ins {background-color: #fcd700; color: #000; text-decoration: none;}
 	mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
@@ -441,19 +444,19 @@ body {
 	.navigation {
 		text-align: center;
 	}
-	
+
 	.navigation:empty {
 		display: none;
 	}
 
 	.widget {
 		clear: both;
-		
+
 		ul {
 			list-style: circle;
 			padding-left: 1.5em;
 		}
-		
+
 		p {
 			margin-bottom: 0;
 		}
@@ -499,7 +502,7 @@ body {
 
 #social {
 	margin: 30px 0 !important;
-	
+
 	 #reply-title,
 	 .social-help,
 	 .social-last-reply-when,
@@ -517,8 +520,8 @@ body {
 		padding-left: 0px !important;
 	}
 
-	 input.social-input, 
-	 textarea.social-input, 
+	 input.social-input,
+	 textarea.social-input,
 	 .social-select {
 		background: none !important;
 		display: inline-block;
@@ -534,12 +537,12 @@ body {
 		box-shadow: none !important;
 	}
 
-	 input.social-input,  
+	 input.social-input,
 	 .social-select {
 		width: 100% !important;
 		height: 46px !important;
-		-webkit-box-sizing: border-box; 
-		-moz-box-sizing: border-box;    
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 
@@ -576,11 +579,11 @@ body {
 
 		text-shadow: none !important;
 
-		/*Transition*/ 
-		-webkit-transition: All 0.5s ease; 
-		-moz-transition: All 0.5s ease; 
-		-o-transition: All 0.5s ease; 
-		-ms-transition: All 0.5s ease; 
+		/*Transition*/
+		-webkit-transition: All 0.5s ease;
+		-moz-transition: All 0.5s ease;
+		-o-transition: All 0.5s ease;
+		-ms-transition: All 0.5s ease;
 		transition: All 0.5s ease;
 	}
 
@@ -603,18 +606,18 @@ body {
 
 	 .social-nav {
 		background: none !important;
-		
+
 		li a {
 			text-decoration: none;
 		}
-		
+
 		.social-current-tab {
 			background: #DEDEDE !important;
-	
+
 			-webkit-border-radius: 3px !important;
 			-moz-border-radius: 3px !important;
 			border-radius: 3px !important;
-			
+
 				a {
 				background: none !important;
 				text-decoration: none !important;
@@ -655,7 +658,7 @@ body {
 		width: 46px;
 		height: 46px;
 	    display: inline-block;
-	    
+
 	    &:hover {
 	    	margin-top: 0px;
 	    }
@@ -690,7 +693,7 @@ body {
 
 } /*end social media buttons if statement
 
-/* Font Awesome 
+/* Font Awesome
 	-------------------------------------------------------------- */
 @if $font-awesome == 1 {
 
@@ -787,11 +790,11 @@ body {
 	background-color: #dedede;
 	color: #555;
 
-	/*Transition*/ 
-	-webkit-transition: All 0.5s ease; 
-	-moz-transition: All 0.5s ease; 
-	-o-transition: All 0.5s ease; 
-	-ms-transition: All 0.5s ease; 
+	/*Transition*/
+	-webkit-transition: All 0.5s ease;
+	-moz-transition: All 0.5s ease;
+	-o-transition: All 0.5s ease;
+	-ms-transition: All 0.5s ease;
 	transition: All 0.5s ease;
 }
 
@@ -816,7 +819,7 @@ body {
 .wpcf7-textarea,
 .wpcf7-response-output,
 .wpcf7-not-valid-tip {
-		width: 100% !important; 
+		width: 100% !important;
 		display: inline-block;
 		text-decoration: none;
 		color: #555;
@@ -825,9 +828,9 @@ body {
 		-moz-border-radius: 3px;
 		border-radius: 3px;
 		padding: 0 10px;
-		-webkit-box-sizing: border-box; 
-		-moz-box-sizing: border-box;    
-		box-sizing: border-box;         
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 
 .wpcf7-text {
@@ -841,7 +844,7 @@ body {
 }
 
 .ie8 .wpcf7-text { /* IE8 */
-	height: auto; 
+	height: auto;
 }
 
 .wpcf7-textarea {
@@ -929,7 +932,7 @@ body {
 }
 
 #mc-sign-up-button:hover,
-#mc-sign-up-button:active, 
+#mc-sign-up-button:active,
 #mc-sign-up-button:focus {
 	background-color: #5C963A;
 }
@@ -952,7 +955,7 @@ body {
 		border-bottom: $border-thickness solid $border-color;
 		padding-bottom: 15px;
 		margin-bottom: 15px;
-		
+
 		img {
 			max-width: 48px;
 		}
@@ -985,15 +988,14 @@ body {
 
 /* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
-	
-		
+
+
 }
 
 @media all and (orientation: portrait) {
-	
+
 }
 
 @media all and (orientation: landscape) {
-	
-}
 
+}

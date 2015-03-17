@@ -1,11 +1,10 @@
 // remap jQuery to $
 (function($){})(window.jQuery);
 
-
 /* trigger when page is ready */
-$(document).ready(function (){
+jQuery(document).ready(function ($){
 
-	/* removes comments div (#social-tabs-comments) for social plugin, 
+	/* removes comments div (#social-tabs-comments) for social plugin,
 	   if there are no comments (Hack since :empty selector is not working!?!)
 	 */
 	if( !$.trim( $('#social-tabs-comments').html() ).length ) {
@@ -14,36 +13,36 @@ $(document).ready(function (){
 
 	/* Adds placeholders to "Social" comment form plugin
 	 */
-	if ( $('#author').length > 0 ) { 
+	if ( $('#author').length > 0 ) {
     	$('#author').attr('placeholder', 'Your Name');
     }
 
-    if ( $('#email').length > 0 ) { 
+    if ( $('#email').length > 0 ) {
 		$('#email').attr('placeholder', 'Your Email');
 	}
 
-	if ( $('#url').length > 0 ) { 
+	if ( $('#url').length > 0 ) {
 		$('#url').attr('placeholder', 'Your Website');
 	}
-	if ( $('#comment').length > 0 ) { 
+	if ( $('#comment').length > 0 ) {
 		$('#comment').attr('placeholder', 'Your Comment');
 	}
 
-	if ( $('#comment').length > 0 ) { 
+	if ( $('#comment').length > 0 ) {
 		$('#submit').attr('value', 'Comment');
 	}
 
 	/* Adds placeholders to "Contact Us" form
 	 */
-	if ( $('#cf7-contact-us-name').length > 0 ) { 
+	if ( $('#cf7-contact-us-name').length > 0 ) {
 		$('#cf7-contact-us-name').attr('placeholder', 'Your Name');
 	}
 
-	if ( $('#cf7-contact-us-email').length > 0 ) { 
+	if ( $('#cf7-contact-us-email').length > 0 ) {
 		$('#cf7-contact-us-email').attr('placeholder', 'Your Email');
 	}
 
-	if ( $('#cf7-contact-us-message').length > 0 ) { 
+	if ( $('#cf7-contact-us-message').length > 0 ) {
 		$('#cf7-contact-us-message').attr('placeholder', 'Your Message for Us');
 	}
 
@@ -53,7 +52,7 @@ $(document).ready(function (){
 
 	/* Adds placeholders to "Mailchimp Sign Up" form
 	 */
-	 if ( $('#mc-sign-up-email').length > 0 ) { 
+	 if ( $('#mc-sign-up-email').length > 0 ) {
 		$('#mc-sign-up-email').attr('placeholder', 'Enter Your Email Here');
 	}
 
@@ -90,11 +89,11 @@ $(document).ready(function (){
 /* optional triggers
 
 $(window).load(function() {
-	
+
 });
 
 $(window).resize(function() {
-	
+
 });
 
 */
